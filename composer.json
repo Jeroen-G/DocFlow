@@ -1,0 +1,43 @@
+{
+    "name": "jeroen-g/docflow",
+    "description": ":description",
+    "license": "EUPL-1.1",
+    "authors": [
+        {
+            "name": "Jeroen",
+            "email": "jeroengjeroeng@gmail.com",
+            "homepage": "https://github.com/Jeroen-G"
+        }
+    ],
+    "homepage": "https://github.com/Jeroen-G/DocFlow",
+    "keywords": ["Laravel", "DocFlow"],
+    "require": {
+        "illuminate/support": "~5",
+        "spatie/laravel-model-status": "^1.5",
+        "jeroen-g/testassist": "^1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeroenG\\DocFlow\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeroenG\\DocFlow\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeroenG\\DocFlow\\DocFlowServiceProvider"
+            ],
+            "aliases": {
+                "DocFlow": "JeroenG\\DocFlow\\Facades\\DocFlow"
+            }
+        }
+    }
+}
